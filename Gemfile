@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
 gemspec
-gem 'coveralls', '~> 0.8.15'
+gem 'coveralls', require: false
