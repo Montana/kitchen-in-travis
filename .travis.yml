@@ -17,4 +17,4 @@ matrix:
 services:
   - docker
 after_sucess:
-  - echo $COVERALLS_TOKEN
+  - echo coveralls push $COVERALLS_TOKEN
