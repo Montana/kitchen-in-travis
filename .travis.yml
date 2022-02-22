@@ -17,4 +17,4 @@ matrix:
 services:
   - docker
 after_sucess:
-  - coveralls push $repo_token
+  - echo $repo_token
