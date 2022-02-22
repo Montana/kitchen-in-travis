@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'rake'
 require 'rspec'
 require 'rspec/its'
 require 'simplecov'
-
-require 'coveralls'
-Coveralls.wear!
 
 # Check for coverage stuffs
 formatters = []
