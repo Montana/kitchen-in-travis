@@ -17,3 +17,5 @@ matrix:
         - bundle exec kitchen list
 services:
   - docker
+after_sucess:
+ - coveralls 
