@@ -18,4 +18,4 @@ matrix:
 services:
   - docker
 after_success:
-  - coveralls push $COVERALLS_TOKEN
+  - coveralls report $COVERALLS_TOKEN
