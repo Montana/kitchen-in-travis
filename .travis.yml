@@ -17,5 +17,3 @@ matrix:
         - bundle exec kitchen list
 services:
   - docker
-after_success:
-  - coveralls report $COVERALLS_TOKEN
