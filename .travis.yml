@@ -18,4 +18,4 @@ matrix:
 services:
   - docker
 after_success:
-  - coveralls report
+  - goveralls -coverprofile=coverage.out -service travis-pro -repotoken $COVERALLS_TOKEN
