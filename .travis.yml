@@ -1,0 +1,19 @@
+---
+matrix:
+  include:
+    - os: linux
+      rvm: 2.4.9
+      dist: xenial
+      language: ruby
+      cache: bundler
+      before_install:
+        - gem update --system
+        - gem install bundler
+      script:
+        - bundle exec docker version
+        - bundle exec kitchen --version
+        - bundle exec kitchen list
+services:
+  - docker
+after_success:
+  - coveralls
