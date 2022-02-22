@@ -21,6 +21,7 @@ platforms:
     provision_command:
     - yum install libxcrypt-compat -y
     - curl -L https://www.chef.io/chef/install.sh | bash
+    - yum install ruby-coveralls 
 - name: centos-8
 - name: oraclelinux-7
 - name: rockylinux-8
@@ -39,6 +40,8 @@ suites:
     provision_command:
     - curl -L https://www.chef.io/chef/install.sh | bash
     - apt-get install -y net-tools
+    - apt-get install ruby-coveralls
+    - coveralls open
     cap_drop:
     - NET_ADMIN
 - name: arm64
