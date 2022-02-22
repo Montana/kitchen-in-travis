@@ -2,6 +2,7 @@
 matrix:
   include:
     - os: linux
+      env: repo_token
       rvm: 2.4.9
       dist: xenial
       language: ruby
