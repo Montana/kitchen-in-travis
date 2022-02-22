@@ -4,7 +4,6 @@ matrix:
     - os: linux
       rvm: 2.4.9
       dist: xenial
-      env: COVERALLS_TOKEN="coveralls:report"
       language: ruby
       cache: bundler
       before_install:
@@ -18,4 +17,5 @@ matrix:
 services:
   - docker
 after_sucess:
- - coveralls 
+  - coveralls service
+  - coveralls push
