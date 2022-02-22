@@ -16,7 +16,7 @@ matrix:
         - bundle exec kitchen list
         - curl -Os https://uploader.codecov.io/latest/linux/codecov
         - chmod +x codecov 
-        - ./codecov
+        - ./codecov -t 
 services:
   - docker
 after_sucess:
