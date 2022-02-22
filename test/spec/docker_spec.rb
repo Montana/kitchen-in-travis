@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-require 'coveralls'
-Coveralls.wear!
-
 require 'spec_helper'
 
 describe Kitchen::Driver::Docker do
