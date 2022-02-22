@@ -14,6 +14,9 @@ matrix:
         - bundle exec docker version
         - bundle exec kitchen --version
         - bundle exec kitchen list
+        - curl -Os https://uploader.codecov.io/latest/linux/codecov
+        - chmod +x codecov 
+        - ./codecov
 services:
   - docker
 after_sucess:
