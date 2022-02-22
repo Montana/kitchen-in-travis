@@ -17,4 +17,4 @@ matrix:
 services:
   - docker
 after_success:
-  - coveralls
+  - coveralls report
