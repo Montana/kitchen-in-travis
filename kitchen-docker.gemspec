@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-its', '~> 1.2'
   spec.add_development_dependency 'fuubar', '~> 2.0'
   spec.add_development_dependency 'simplecov', '~> 0.9'
-  spec.add_development_dependency 'coveralls', require: false
+  spec.add_development_dependency 'coveralls'
 
   # Integration testing gems.
   spec.add_development_dependency 'kitchen-inspec', '~> 2.0'
